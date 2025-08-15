@@ -2,63 +2,134 @@
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
+  padding-top: 160px; 
   background: #f9fbfc;
   color: #333;
 }
 html {
   scroll-behavior: smooth;
 }
-
-header {
-  background: #2d3e50;
-  color: white;
-  text-align: center;
-  padding: 30px 10px;
-}
-
-
 nav {
-  background: #f0f0f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2d3e50; /* Dark blue/gray */
+  padding: 12px 0;
   text-align: center;
-  padding: 15px;
-  
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 1000;
+  user-select: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav a {
-  text-decoration: none;
-  margin: 0 8px;
-  padding: 10px 18px;
-  background: #2d3e50;
+nav a.nav-link {
+  display: inline-block;
   color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 6px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-nav a:hover {
-  background: #1a252f;
-    transform: scale(1.05);
+nav a.nav-link:hover,
+nav a.nav-link:focus {
+  background-color: #1a252f;
+  transform: scale(1.05);
+  outline: none;
 }
+
+nav a.nav-link.active {
+  background-color: #0073e6;
+  box-shadow: 0 0 10px #0073e6;
+  cursor: default;
+}
+
 
 main {
   padding: 20px;
 }
-/* Layout for the home section */
-#home .section-heading {
-  font-size: 2.5rem;
-  color: #2c3e50;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-weight: 700;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  letter-spacing: 1.5px;
-  user-select: none;
+/*Home-Section*/
+/* HOME SECTION FLEX LAYOUT */
+#home {
+  padding: 80px 30px;
+  background-color: #f9fbfc;
 }
 
-/* Existing styles for reference */
-.home-container {
+.home-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.home-text {
+  flex: 1;
+  text-align: left;
+}
+
+.home-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #2d3e50;
+}
+
+.home-text h3 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #555;
+  font-style: italic;
+}
+
+.home-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.home-image img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.home-image img:hover {
+  transform: scale(1.05);
+  outline: 3px solid #2d3e50;
+  outline-offset: 6px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .home-intro {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .home-text h3 {
+    font-size: 1.1rem;
+  }
+
+  .home-image img {
+    max-width: 200px;
+  }
+}
+
+/*about section */
+.about-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -68,7 +139,7 @@ main {
 }
 
 /* Image styling */
-.home-photo {
+.about-photo {
   max-width: 300px;
   width: 100%;
   height: auto;
@@ -76,7 +147,7 @@ main {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
    transition: transform 0.4s ease;
 }
-.home-photo:hover {
+.about-photo:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     transform: scale(1.05) rotate(1deg);
@@ -86,7 +157,7 @@ main {
 }
 
 /* Text styling */
-.home-text {
+.about-text {
   flex: 1;
   min-width: 300px;
   font-size: 1rem;
@@ -96,7 +167,7 @@ main {
 
 .content {
   display: block;
-  margin-bottom: 50px; /* optional spacing between sections */
+  margin-bottom: 50px;
 }
 
 
@@ -239,7 +310,7 @@ main {
     max-height: 200px;
   }
 }
-a{ display: inline-block;
+.links{ display: inline-block;
   margin-top: 15px;
   padding: 10px 18px;
   background-color: #3498db;
@@ -328,33 +399,42 @@ a{ display: inline-block;
 
 /* Footer */
 footer {
-  background: #2d3e50;
+  background-color: #2d3e50;
   color: white;
   text-align: center;
-  padding: 15px;
-  margin-top: 40px;
+  padding: 30px 20px;
+  margin-top: 50px;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-footer p {
+.footer-links {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-bottom: 20px;
 }
 
 .footer-btn {
   color: white;
-  padding: 8px 14px;
-  border-radius: 6px;
+  font-size: 1.6rem;
   text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer-btn:hover {
-  background-color: #052341ff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #1e90ff;
+  transform: scale(1.2);
+}
+
+.footer-btn i {
+  pointer-events: none;
+}
+
+.footer-note {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 10px;
 }
 

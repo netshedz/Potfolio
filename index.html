@@ -9,52 +9,64 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header data-aos="flip-right">
-    <h1>HI, I AM Dzhivhuho Netshedzo</h1>
-    <h3> a Front-End Developer & Data Analyst and also an IT techncian</h3>
-  </header>
-
   <nav>
-  <a href="#home" class="nav-link">Home</a>
-  <a href="#web" class="nav-link">Web Dev</a>
-  <a href="#data" class="nav-link">Data Analysis</a>
-  <a href="#it" class="nav-link">IT Support</a>
-  <a href="#projects" class="nav-link">Projects</a>
-  <a href="#tools" class="nav-link">Tools</a>
-</nav>
-    
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#web" class="nav-link">Front-End Dev</a>
+    <a href="#data" class="nav-link">Data Analysis</a>
+    <a href="#it" class="nav-link">IT Support</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#tools" class="nav-link">Tools</a>
+  </nav>
+
   <main>
-    <section id="home" class="content">
-    <h2 class="section-heading">About</h2>
-  <div class="home-container">
-    <img src="me.jpg" alt="Your photo" class="home-photo">
-    <div class="home-text">
+   <section id="home" class="content">
+  <div class="home-intro">
+    <div class="home-text" data-aos="fade-right" data-aos-duration="1200">
+      <h1>HI, I AM Dzhivhuho Netshedzo</h1>
+      <h3>a Front-End Developer & Data Analyst and also an IT technician</h3>
+    </div>
+    <div class="home-image" data-aos="fade-left" data-aos-duration="1200">
+      <img src="anime.jpg" alt="Profile Image" />
+    </div>
+  </div>
+</section>
+
+
+    <section id="about" class="content">
+    <h2 class="section-heading">👧About</h2>
+  <div class="about-container">
+    <img src="me.jpg" alt="Your photo" class="about-photo">
+    <div class="about-text">
       <p>I am a Computer Science and Information Systems graduate with over a year of hands-on experience in <strong>desktop support and networking</strong> , including <strong>VoIP troubleshooting</strong> .<br>
-         I have a strong foundation in <strong>web development</strong>  and <strong>data analysis</strong> , proficient in tools like <strong>Power BI</strong> ,<strong>SQL</strong> ,<strong> Tableau, and Excel</strong>.<br>
-         Skilled in <strong>HTML, CSS, JavaScript,nodejs, react Python, and WordPress</strong>  I am passionate about problem-solving, continuous learning, and crafting intuitive digital experiences.<br>
+         I have a strong foundation in <strong>Front-End development</strong>  and <strong>data analysis</strong> , proficient in tools like <strong>Power BI</strong> ,<strong>SQL</strong> ,<strong> Tableau, and Excel</strong>.<br>
+         Skilled in <strong>HTML, CSS, JavaScript,nodejs, react, Python, and WordPress</strong>  I am passionate about problem-solving, continuous learning, and crafting intuitive digital experiences.<br>
          I thrive in collaborative environments and aspire to grow into a full-stack developer or data analyst role—where I can combine technical expertise with strategic insight to create smarter, more efficient solutions.</p>
       </p>
     </div>
   </div>
 </section>
-
-    <!-- Web Development -->
-    <section id="web" class="content">
-      <h2>💻 Web Development</h2>
+<section id="skills" class="content">
+  <h2>💡 Skills</h2>
+  <div class="skills-wrapper">
+    
+    <!-- Front-End Development -->
+    <div class="skill-box" data-aos="fade-up" data-aos-delay="100">
+      <h3>💻 Front-End Developer</h3>
       <ul class="icon-list">
         <li><i class="fab fa-html5"></i> HTML</li>
         <li><i class="fab fa-css3-alt"></i> CSS</li>
         <li><i class="fab fa-js"></i> JavaScript</li>
         <li><i class="fab fa-python"></i> Python</li>
         <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
-          <li><i class="fa-brands fa-react"></i> React</li>
-         <li><i class="fa-brands fa-node-js"></i> Node-js</li>
+        <li><i class="fab fa-react"></i> React</li>
+        <li><i class="fab fa-node-js"></i> Node.js</li>
       </ul>
-    </section>
+    </div>
 
-    <!-- Data Analysis -->
-    <section id="data" class="content">
-      <h2>📊 Data Analysis</h2>
+    <!-- Data Analyst -->
+    <div class="skill-box" data-aos="fade-up" data-aos-delay="200">
+      <h3>📊 Data Analyst</h3>
       <ul class="icon-list">
         <li><i class="fas fa-database"></i> SQL</li>
         <li><i class="fab fa-python"></i> Python (Pandas, Jupyter)</li>
@@ -62,25 +74,30 @@
         <li><i class="fas fa-chart-pie"></i> Tableau</li>
         <li><i class="fas fa-file-excel"></i> Excel</li>
       </ul>
-    </section>
+    </div>
 
-    <!-- IT Support -->
-    <section id="it" class="content">
-      <h2>🛠 IT Support</h2>
+    <!-- IT Technician -->
+    <div class="skill-box" data-aos="fade-up" data-aos-delay="300">
+      <h3>🛠 IT Technician</h3>
       <ul class="icon-list">
-        <li><i class="fab fa-windows"></i> Windows 10/11, Windows Server</li>
-        <li><i class="fas fa-tools"></i> Remote Support (TeamViewer, N-central, AnyDesk)</li>
-        <li><i class="fas fa-network-wired"></i> Networking (VPN, DNS/DHCP, LAN/WAN)</li>
-        <li><i class="fas fa-phone-alt"></i> VoIP Systems (PBXware, Yealink)</li>
-        <li><i class="fas fa-lock"></i> Cybersecurity (MFA, password policies)</li>
+        <li><i class="fab fa-windows"></i> Windows 10/11, Server</li>
+        <li><i class="fas fa-tools"></i> Remote Support (TeamViewer, AnyDesk)</li>
+        <li><i class="fas fa-network-wired"></i> Networking (VPN, DHCP)</li>
+        <li><i class="fas fa-phone-alt"></i> VoIP (PBXware, Yealink)</li>
+        <li><i class="fas fa-lock"></i> Cybersecurity</li>
       </ul>
-    </section>
+    </div>
+
+  </div>
+</section>
+
+
     <!--projects-->
     <section id="projects" class="content">
   <h2>🧩 Projects</h2>
 
   <!-- Data Analytics Section -->
-  <div class="project-row">
+  <div class="project-row" data-aos="flip-right"data-aos-delay="200" data-aos-duration="2000">
     <h2>Data Analytics</h2>
     <div class="project-pair">
       <div class="project">
@@ -103,12 +120,12 @@
         </div>
       </div>
     </div>
-    <a href="https://github.com/netshedz" target="_blank">View Site</a>
+    <a href="https://github.com/netshedz" target="_blank" class="links">View Site</a>
   </div>
 
   <!-- Web Development Section -->
-  <div class="project-row">
-    <h2>Web Development</h2>
+  <div class="project-row" data-aos="flip-right"data-aos-delay="200" data-aos-duration="2000">
+    <h2>Front-End Development</h2>
     <div class="project-pair">
       <div class="project">
         <h3>🌐 Weather App</h3>
@@ -124,24 +141,24 @@
       <div class="project">
         <h3>🤖 AI Buddy Bot</h3>
         <div class="project-content">
-          <img src="Ai_buddy.png" alt="AI Buddy Bot Screenshot" class="project-image" data-aos="flip-right"data-aos-delay="200" data-aos-duration="1000"/>
+          <img src="Ai_buddy.png" alt="AI Buddy Bot Screenshot" class="project-image"data-aos="flip-right"data-aos-delay="200" data-aos-duration="1000" />
           <p>
             Created a conversational AI chatbot to assist users with code help, learning, productivity, and writing suggestions.
           </p>
         </div>
       </div>
     </div>
-    <a href="https://app.netlify.com/teams/netshedz/projects" target="_blank">View Site</a>
+    <a href="https://app.netlify.com/teams/netshedz/projects" target="_blank" class="links">View Site</a>
   </div>
 
   <!-- IT Support Section -->
-  <div class="project-row">
+  <div class="project-row" data-aos="flip-right"data-aos-delay="200" data-aos-duration="2000">
     <h2>IT Support</h2>
     <div class="project-pair">
       <div class="project">
         <h3>🛠 IT Knowledge Base</h3>
         <div class="project-content">
-          <img src="repair.webp" alt="IT Knowledge Base Screenshot" class="project-image" data-aos="flip-right"data-aos-delay="200" data-aos-duration="1000"/>
+          <img src="repair.webp" alt="IT Knowledge Base Screenshot" class="project-image"data-aos="flip-right"data-aos-delay="200" data-aos-duration="1000" />
           <p>
             Built a standardized desktop support process including Windows setup, driver installs, remote tools config, and security hardening.
           </p>
@@ -155,37 +172,55 @@
 
 
     <!-- Tools I Use -->
-<section id="tools" class="content">
+<section id="tools" class="content" data-aos="fade-up" data-aos-duration="1000">
   <h2>🧰 Tools I Use</h2>
   <ul class="icon-list">
-    <li><i class="fas fa-code"></i> VS Code</li>
-    <li><i class="fab fa-git-alt"></i> Git</li>
-    <li><i class="fab fa-github"></i> GitHub</li>
-    <li><i class="fas fa-database"></i> MySQL / SQL Server</li>
-    <li><i class="fas fa-chart-line"></i> Power BI</li>
-    <li><i class="fas fa-file-excel"></i> Excel</li>
-    <li><i class="fab fa-wordpress"></i> WordPress</li>
-    <li><i class="fas fa-terminal"></i> Command Line</li>
-    <li><i class="fas fa-cloud"></i> Netlify</li>
-    <li><i class="fab fa-youtube"></i> YouTube</li>
-    <li><i class="fab fa-tiktok"></i> TikTok</li>
-    <li><i class="fab fa-linkedin"></i> LinkedIn</li>
-    <li><i class="fab fa-google"></i> Google Workspace</li>
-    <li><i class="fab fa-whatsapp"></i> WhatsApp</li>
-    <li><i class="fas fa-paint-brush"></i> Canva</li>
-    <li><i class="fa-brands fa-react"></i> React</li>
-    <li><i class="fa-brands fa-node-js"></i> Node-js</li>
-      </ul>
+    <li data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-code"></i> VS Code</li>
+    <li data-aos="zoom-in" data-aos-delay="200"><i class="fab fa-git-alt"></i> Git</li>
+    <li data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-github"></i> GitHub</li>
+    <li data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-database"></i> MySQL / SQL Server</li>
+    <li data-aos="zoom-in" data-aos-delay="500"><i class="fas fa-chart-line"></i> Power BI</li>
+    <li data-aos="zoom-in" data-aos-delay="600"><i class="fas fa-file-excel"></i> Excel</li>
+    <li data-aos="zoom-in" data-aos-delay="700"><i class="fab fa-wordpress"></i> WordPress</li>
+    <li data-aos="zoom-in" data-aos-delay="800"><i class="fas fa-terminal"></i> Command Line</li>
+    <li data-aos="zoom-in" data-aos-delay="900"><i class="fas fa-cloud"></i> Netlify</li>
+    <li data-aos="zoom-in" data-aos-delay="1000"><i class="fab fa-youtube"></i> YouTube</li>
+    <li data-aos="zoom-in" data-aos-delay="1100"><i class="fab fa-tiktok"></i> TikTok</li>
+    <li data-aos="zoom-in" data-aos-delay="1200"><i class="fab fa-linkedin"></i> LinkedIn</li>
+    <li data-aos="zoom-in" data-aos-delay="1300"><i class="fab fa-google"></i> Google Workspace</li>
+    <li data-aos="zoom-in" data-aos-delay="1400"><i class="fab fa-whatsapp"></i> WhatsApp</li>
+    <li data-aos="zoom-in" data-aos-delay="1500"><i class="fas fa-paint-brush"></i> Canva</li>
+    <li data-aos="zoom-in" data-aos-delay="1600"><i class="fab fa-react"></i> React</li>
+    <li data-aos="zoom-in" data-aos-delay="1700"><i class="fab fa-node-js"></i> Node-js</li>
   </ul>
 </section>
+
 
   </main>
 
   <footer>
-  <a href="mailto:netshedzodzhivhuho06@gmail.com" class="footer-btn">📧 netshedzodzhivhuho06@gmail.com</a>
-    <a href="tel:0609443368" class="footer-btn">📞 060 944 3368</a>
-    <a href="https://github.com/netshedz"class="footer-btn target="_blank">GitHub</a>
+  <div class="footer-links">
+    <a href="mailto:netshedzodzhivhuho06@gmail.com" class="footer-btn" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="tel:0609443368" class="footer-btn" title="Phone">
+      <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://facebook.com/Nechy Jivhuho" target="_blank" rel="noopener" class="footer-btn" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://instagram.com/Precious Dzhivhuho" target="_blank" rel="noopener" class="footer-btn" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/netshedzo-dzhivhuho-162012224/" target="_blank" rel="noopener" class="footer-btn" title="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+
+  <p class="footer-note">© 2025 Dzhivhuho Netshedzo. All rights reserved.</p>
 </footer>
+
+
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init();
