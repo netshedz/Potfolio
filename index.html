@@ -6,10 +6,11 @@
   <title>Your Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Hi, i am Dzhivhuho Netshedzo</h1>
+  <header data-aos="flip-right">
+    <h1>HI, I AM Dzhivhuho Netshedzo</h1>
     <h3> a Front-End Developer & Data Analyst and also an IT techncian</h3>
   </header>
 
@@ -28,9 +29,9 @@
   <div class="home-container">
     <img src="me.jpg" alt="Your photo" class="home-photo">
     <div class="home-text">
-      <p>I am a Computer Science and Information Systems graduate with over a year of hands-on experience in desktop support and networking, including VoIP troubleshooting.<br>
-         I have a strong foundation in web development and data analysis, proficient in tools like Power BI, SQL, Tableau, and Excel.<br>
-         Skilled in HTML, CSS, JavaScript, Python, and WordPress, I am passionate about problem-solving, continuous learning, and crafting intuitive digital experiences.<br>
+      <p>I am a Computer Science and Information Systems graduate with over a year of hands-on experience in <strong>desktop support and networking</strong> , including <strong>VoIP troubleshooting</strong> .<br>
+         I have a strong foundation in <strong>web development</strong>  and <strong>data analysis</strong> , proficient in tools like <strong>Power BI</strong> ,<strong>SQL</strong> ,<strong> Tableau, and Excel</strong>.<br>
+         Skilled in <strong>HTML, CSS, JavaScript,nodejs, react Python, and WordPress</strong>  I am passionate about problem-solving, continuous learning, and crafting intuitive digital experiences.<br>
          I thrive in collaborative environments and aspire to grow into a full-stack developer or data analyst role—where I can combine technical expertise with strategic insight to create smarter, more efficient solutions.</p>
       </p>
     </div>
@@ -46,6 +47,8 @@
         <li><i class="fab fa-js"></i> JavaScript</li>
         <li><i class="fab fa-python"></i> Python</li>
         <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+          <li><i class="fa-brands fa-react"></i> React</li>
+         <li><i class="fa-brands fa-node-js"></i> Node-js</li>
       </ul>
     </section>
 
@@ -83,7 +86,7 @@
       <div class="project">
         <h3>📊 Laptop Data using Excel</h3>
         <div class="project-content">
-          <img src="laptop.png" alt="Laptop Data Excel Screenshot" class="project-image" />
+          <img src="laptop.png" alt="Laptop Data Excel Screenshot" class="project-image"data-aos="flip-right"data-aos-delay="200" data-aos-duration="1000" />
           <p>
             Cleaned laptop data and created a pivot table in Excel to compare average prices based on brand, type, and RAM size.
           </p>
@@ -93,7 +96,7 @@
       <div class="project">
         <h3>📈 Power BI: Data Pro Survey</h3>
         <div class="project-content">
-          <img src="dashboard.png" alt="Power BI Survey Screenshot" class="project-image" />
+          <img src="dashboard.png" alt="Power BI Survey Screenshot" class="project-image"data-aos="flip-right"data-aos-delay="200" data-aos-duration="1000" />
           <p>
             Built an interactive dashboard in Power BI analyzing global data professional salaries, tools, and roles.
           </p>
@@ -110,7 +113,7 @@
       <div class="project">
         <h3>🌐 Weather App</h3>
         <div class="project-content">
-          <img src="weather.png" alt="Weather App Screenshot" class="project-image" />
+          <img src="weather.png" alt="Weather App Screenshot" class="project-image" data-aos="flip-right"data-aos-delay="200" data-aos-duration="1000"/>
           <p>
             Developed a responsive weather app using HTML, CSS, and JavaScript. Integrated with a weather API and deployed via Netlify.
           </p>
@@ -121,7 +124,7 @@
       <div class="project">
         <h3>🤖 AI Buddy Bot</h3>
         <div class="project-content">
-          <img src="Ai_buddy.png" alt="AI Buddy Bot Screenshot" class="project-image" />
+          <img src="Ai_buddy.png" alt="AI Buddy Bot Screenshot" class="project-image" data-aos="flip-right"data-aos-delay="200" data-aos-duration="1000"/>
           <p>
             Created a conversational AI chatbot to assist users with code help, learning, productivity, and writing suggestions.
           </p>
@@ -138,14 +141,14 @@
       <div class="project">
         <h3>🛠 IT Knowledge Base</h3>
         <div class="project-content">
-          <img src="repair.webp" alt="IT Knowledge Base Screenshot" class="project-image" />
+          <img src="repair.webp" alt="IT Knowledge Base Screenshot" class="project-image" data-aos="flip-right"data-aos-delay="200" data-aos-duration="1000"/>
           <p>
             Built a standardized desktop support process including Windows setup, driver installs, remote tools config, and security hardening.
           </p>
         </div>
       </div>
 
-      <div class="project placeholder"></div> <!-- Empty block to maintain alignment -->
+      <div class="project placeholder"></div>
     </div>
   </div>
 </section>
@@ -170,15 +173,23 @@
     <li><i class="fab fa-google"></i> Google Workspace</li>
     <li><i class="fab fa-whatsapp"></i> WhatsApp</li>
     <li><i class="fas fa-paint-brush"></i> Canva</li>
+    <li><i class="fa-brands fa-react"></i> React</li>
+    <li><i class="fa-brands fa-node-js"></i> Node-js</li>
+      </ul>
   </ul>
 </section>
 
   </main>
 
   <footer>
-  <p>📧 netshedzodzhivhuho06@gmail.com | 📞 060 944 3368 | <a href="https://github.com/netshedz" target="_blank">GitHub</a></p>
+  <a href="mailto:netshedzodzhivhuho06@gmail.com" class="footer-btn">📧 netshedzodzhivhuho06@gmail.com</a>
+    <a href="tel:0609443368" class="footer-btn">📞 060 944 3368</a>
+    <a href="https://github.com/netshedz"class="footer-btn target="_blank">GitHub</a>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
-  <script></script>
 </body>
 </html>

@@ -34,10 +34,12 @@ nav a {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 nav a:hover {
   background: #1a252f;
+    transform: scale(1.05);
 }
 
 main {
@@ -72,6 +74,15 @@ main {
   height: auto;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+   transition: transform 0.4s ease;
+}
+.home-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transform: scale(1.05) rotate(1deg);
+    transform: scale(1.05);
+  outline: 3px solid #043556ff;
+  outline-offset: 5px;
 }
 
 /* Text styling */
@@ -93,6 +104,10 @@ main {
   border-bottom: 2px solid #2d3e50;
   padding-bottom: 5px;
   margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+.content h2:hover {
+  color: #0073e6;
 }
 
 .icon-list {
@@ -106,9 +121,15 @@ main {
 }
 
 .icon-list i {
+  font-size: 55px;
   color: #2d3e50;
-  margin-right: 10px;
+  margin-right: 50px;
   width: 20px;
+   transition: transform 0.3s ease, color 0.3s ease;
+}
+.icon-list li:hover i {
+  transform: scale(1.2);
+  color: #599fe5ff;
 }
 /* PROJECT SECTION STYLES */
 #projects {
@@ -122,6 +143,16 @@ main {
   margin-bottom: 40px;
   color: #333;
 }
+.project h3 {
+  transition: transform 0.4s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.project h3:hover {
+  transform: scale(1.05);
+  color: #0073e6; /* Optional: gives it a highlight color */
+}
+
 
 .project-row {
   margin-bottom: 60px;
@@ -168,6 +199,7 @@ main {
   border-radius: 8px;
   object-fit: cover;
 }
+
 
 .project p {
   font-size: 0.95em;
@@ -303,7 +335,26 @@ footer {
   margin-top: 40px;
 }
 
-footer a {
-  color: #00c8ff;
-  text-decoration: none;
+footer p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
+
+.footer-btn {
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.footer-btn:hover {
+  background-color: #052341ff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
