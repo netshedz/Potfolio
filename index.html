@@ -7,14 +7,13 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
   <nav>
     <a href="#home" class="nav-link">Home</a>
     <a href="#about" class="nav-link">About</a>
-    <a href="#web" class="nav-link">Front-End Dev</a>
-    <a href="#data" class="nav-link">Data Analysis</a>
-    <a href="#it" class="nav-link">IT Support</a>
+    <a href="#skills" class="nav-link">Skills</a>
     <a href="#projects" class="nav-link">Projects</a>
     <a href="#tools" class="nav-link">Tools</a>
   </nav>
@@ -23,8 +22,12 @@
    <section id="home" class="content">
   <div class="home-intro">
     <div class="home-text" data-aos="fade-right" data-aos-duration="1200">
-      <h1>HI, I AM Dzhivhuho Netshedzo</h1>
-      <h3>a Front-End Developer & Data Analyst and also an IT technician</h3>
+      <h1><span id="typed-name"></span></h1>
+      <h3><span id="typed-role"></span></h3>
+      <p>
+  This portfolio provides a comprehensive showcase of my technical journey—from front-end development and data analytics to hands-on IT support and networking. It highlights real-world projects, troubleshooting guides, and interactive dashboards that reflect my problem-solving mindset and passion for intuitive digital experiences.
+</p>
+
     </div>
     <div class="home-image" data-aos="fade-left" data-aos-duration="1200">
       <img src="anime.jpg" alt="Profile Image" />
@@ -38,11 +41,15 @@
   <div class="about-container">
     <img src="me.jpg" alt="Your photo" class="about-photo">
     <div class="about-text">
-      <p>I am a Computer Science and Information Systems graduate with over a year of hands-on experience in <strong>desktop support and networking</strong> , including <strong>VoIP troubleshooting</strong> .<br>
-         I have a strong foundation in <strong>Front-End development</strong>  and <strong>data analysis</strong> , proficient in tools like <strong>Power BI</strong> ,<strong>SQL</strong> ,<strong> Tableau, and Excel</strong>.<br>
-         Skilled in <strong>HTML, CSS, JavaScript,nodejs, react, Python, and WordPress</strong>  I am passionate about problem-solving, continuous learning, and crafting intuitive digital experiences.<br>
-         I thrive in collaborative environments and aspire to grow into a full-stack developer or data analyst role—where I can combine technical expertise with strategic insight to create smarter, more efficient solutions.</p>
-      </p>
+      <p>
+  I am a <strong>Computer Science and Information Systems graduate</strong> with over a year of <strong>hands-on experience in desktop support, networking, and VoIP troubleshooting</strong>. 
+  My technical foundation spans <strong>front-end development</strong> and <strong>data analysis</strong>, with proficiency in tools like <strong>Power BI, SQL, Tableau, and Excel</strong>. 
+  I’m skilled in <strong>HTML, CSS, JavaScript, Node.js, React, Python, and WordPress</strong>, and I enjoy crafting <strong>intuitive digital experiences</strong> that solve real-world problems. 
+  I thrive in <strong>collaborative environments</strong> and bring strong <strong>communication, adaptability, and problem-solving skills</strong> to every project. 
+  With experience supporting <strong>IT infrastructure, remote systems, and monitoring tools like PRTG</strong>, I’m passionate about <strong>continuous learning</strong> and aspire to grow into a 
+  <strong>full-stack developer or data analyst role</strong>—where I can merge <strong>technical expertise with strategic insight</strong> to build smarter, more efficient solutions. 
+  My work is backed by <strong>practical experience at IMAS Finance and Voimar Telecoms</strong>, and showcased through <strong>active GitHub and Netlify projects</strong>.
+</p>
     </div>
   </div>
 </section>
@@ -159,9 +166,53 @@
         <h3>🛠 IT Knowledge Base</h3>
         <div class="project-content">
           <img src="repair.webp" alt="IT Knowledge Base Screenshot" class="project-image"data-aos="flip-right"data-aos-delay="200" data-aos-duration="1000" />
-          <p>
-            Built a standardized desktop support process including Windows setup, driver installs, remote tools config, and security hardening.
-          </p>
+          <section>
+  <h4>🛠️ Hardware Project: Hard Drive Replacement</h4>
+  <p><strong>Overview:</strong> Replaced a failing hard drive in a desktop PC and restored full system functionality with complete data recovery.</p>
+
+  <p><strong>Skills Demonstrated:</strong></p>
+  <ul>
+    <li>Hardware installation</li>
+    <li>Data backup and recovery</li>
+    <li>Operating system installation</li>
+  </ul>
+
+  <p><strong>Steps Taken:</strong></p>
+  <ol>
+    <li>Backed up user data to external storage</li>
+    <li>Removed faulty hard drive and installed a new SSD</li>
+    <li>Reinstalled Windows OS and restored user files</li>
+  </ol>
+
+  <p><strong>Outcome:</strong> System performance improved significantly. Client retained all critical data and experienced faster boot times and overall responsiveness.</p>
+</section>
+
+<section style="display: flex; align-items: flex-start; gap: 20px;">
+  <img src="laptop_screen_replacement.jpg" alt="Laptop screen replacement" style="width: 120px; height: auto; object-fit: cover; border-radius: 8px;"data-aos="flip-right"data-aos-delay="200" data-aos-duration="1000">
+
+  <div>
+    <h4>💻 Hardware Project: Laptop Screen Replacement</h4>
+    <p><strong>Overview:</strong> Replaced a cracked laptop screen for a client, restoring full display functionality and visual clarity.</p>
+
+    <p><strong>Skills Demonstrated:</strong></p>
+    <ul>
+      <li>Precision hardware repair</li>
+      <li>Cable management</li>
+      <li>Post-repair testing and quality assurance</li>
+    </ul>
+
+    <p><strong>Steps Taken:</strong></p>
+    <ol>
+      <li>Removed screen bezel and disconnected damaged LCD panel</li>
+      <li>Installed new screen and reassembled the laptop casing</li>
+      <li>Tested display output and verified resolution settings</li>
+    </ol>
+
+    <p><strong>Outcome:</strong> Laptop fully operational with no visual defects. Client was highly satisfied with the repair quality and quick turnaround time.</p>
+  </div>
+</section>
+
+
         </div>
       </div>
 
@@ -224,6 +275,26 @@
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+
+<script>
+  const typedName = new Typed("#typed-name", {
+    strings: ["HI, I AM Dzhivhuho Netshedzo"],
+    typeSpeed: 50,
+    showCursor: false
+  });
+
+  const typedRole = new Typed("#typed-role", {
+    strings: [
+      "A Front-End Developer",
+      " A Data Analyst",
+      " and an IT Technician"
+    ],
+    typeSpeed: 50,
+    backSpeed: 30,
+    backDelay: 1500,
+    loop: true
+  });
 </script>
 
 </body>
