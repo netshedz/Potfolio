@@ -3,7 +3,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding-top: 50px; 
-  background: #f9fbfc;
+  background:#fdc57b;
   color: #333;
 }
 html {
@@ -142,13 +142,13 @@ main {
 
 /*about section */
 .about-container {
-  background-color:pink;
+  background: linear-gradient(108.5deg, rgba(231, 69, 54, 0.82) 11.2%, rgba(255, 181, 17, 0.82) 68%);
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap; 
-  gap: 2rem;
-  padding: 2rem;
+  gap: 16px;
+  padding: 16px;
 }
 
 /* Image styling */
@@ -178,7 +178,7 @@ main {
   color: #444;
 }
 
-.content {
+.content {background: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
   display: block;
   margin-bottom: 50px;
 }
@@ -218,7 +218,7 @@ main {
 /* PROJECT SECTION STYLES */
 #projects {
   padding: 60px 20px;
-  background-color: #f9f9f9;
+  background: linear-gradient(109.6deg, rgb(232, 252, 252) 11.2%, rgb(252, 215, 134) 56.2%, rgb(247, 124, 124) 100.2%);
 }
 
 #projects h2 {
@@ -339,7 +339,7 @@ main {
 
 /* Tools Section Styling */
 #tools {
-  background-color: #f9f9f9;
+  background: linear-gradient(109.6deg, rgb(232, 252, 252) 11.2%, rgb(252, 215, 134) 56.2%, rgb(247, 124, 124) 100.2%);
   padding: 3rem 2rem;
   border-radius: 12px;
   max-width: 900px;
